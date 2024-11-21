@@ -1,0 +1,22 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+	background: rgb(39, 128, 217);
+}
+
+nav {
+
+    text-transform: uppercase; 
+
+	.nav-link,
+	.navbar-nav .nav-link.active,
+	.navbar-nav .nav-link.show,
+	.navbar-brand, .fa-bars {
+		color: rgb(160, 31, 31);
+	}
+}
