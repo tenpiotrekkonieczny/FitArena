@@ -1,3 +1,5 @@
+@use './colors' as *;
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -6,17 +8,26 @@
 
 body {
 	font-family: "Montserrat", sans-serif;
-	background: rgb(39, 128, 217);
+	background: #797373;
 }
 
 nav {
+	text-transform: uppercase;
 
-    text-transform: uppercase; 
+	.nav-link, .navbar-nav .show>.nav-link, .navbar-brand, .fa-bars {
+		color: $white;
+	}
 
-	.nav-link,
-	.navbar-nav .nav-link.active,
-	.navbar-nav .nav-link.show,
-	.navbar-brand, .fa-bars {
-		color: rgb(160, 31, 31);
+	.nav-link:focus, .nav-link:hover, .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+		color: $main-color;
 	}
 }
+
+.logo {
+	width: 70px;
+	height: 70px;
+	border-radius: 50px;
+	color: $main-color;
+}
+
+
