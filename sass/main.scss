@@ -137,6 +137,31 @@ header.hero-img {
 	}
 }
 
+
+.classes {
+
+	.card-img-top {
+		height: 350px;
+		width: 480px;
+		
+	}
+	
+	.card {
+		overflow: hidden;
+		
+		
+	}
+
+	.card:hover {
+		transform: scale(1.04);
+		
+	}
+
+
+
+}
+
+
 @media (min-width: 768px) {
 	.hero-text {
 		h1 {

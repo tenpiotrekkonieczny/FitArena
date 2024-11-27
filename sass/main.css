@@ -122,6 +122,17 @@ header.hero-img .fa-chevron-down {
   color: #D4AF37;
 }
 
+.classes .card-img-top {
+  height: 350px;
+  width: 480px;
+}
+.classes .card {
+  overflow: hidden;
+}
+.classes .card:hover {
+  transform: scale(1.04);
+}
+
 @media (min-width: 768px) {
   .hero-text h1 {
     font-size: 50px;
