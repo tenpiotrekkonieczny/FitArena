@@ -19,9 +19,6 @@ body {
 	color: $main-color;
 }
 
-.black-text {
-	color: $black;
-}
 
 .shadow-bg {
 	background-color: rgba(0, 0, 0, 0.8);
@@ -157,6 +154,48 @@ header.hero-img {
 		transform: scale(1.04);
 	}
 }
+
+.membership {
+
+
+	h2 {
+		color: white;
+
+	} 
+
+	h3 {
+		color: $blue;
+	}
+
+	button {
+		color: black;
+	}
+
+
+}
+
+
+
+
+
+
+@media (max-width: 376px) {
+	
+	
+
+	.classes {
+		.card-img-top {
+			height: 200px;
+			width: 350px;
+		}
+	}
+	
+	
+}
+
+
+
+
 
 @media (min-width: 768px) {
 	.hero-text {

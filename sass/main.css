@@ -17,10 +17,6 @@ body {
   color: #D4AF37;
 }
 
-.black-text {
-  color: #000;
-}
-
 .shadow-bg {
   background-color: rgba(0, 0, 0, 0.8);
 }
@@ -138,6 +134,22 @@ header.hero-img .fa-chevron-down {
   transform: scale(1.04);
 }
 
+.membership h2 {
+  color: white;
+}
+.membership h3 {
+  color: #88c0e4;
+}
+.membership button {
+  color: black;
+}
+
+@media (max-width: 376px) {
+  .classes .card-img-top {
+    height: 200px;
+    width: 350px;
+  }
+}
 @media (min-width: 768px) {
   .hero-text h1 {
     font-size: 50px;
