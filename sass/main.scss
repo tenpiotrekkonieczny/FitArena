@@ -19,6 +19,10 @@ body {
 	color: $main-color;
 }
 
+.black-text {
+	color: $black;
+}
+
 .shadow-bg {
 	background-color: rgba(0, 0, 0, 0.8);
 }
@@ -137,30 +141,22 @@ header.hero-img {
 	}
 }
 
-
 .classes {
-
 	.card-img-top {
 		height: 350px;
 		width: 480px;
-		
 	}
-	
+
 	.card {
 		overflow: hidden;
-		
-		
+		transition: 0.3s;
 	}
 
 	.card:hover {
+
 		transform: scale(1.04);
-		
 	}
-
-
-
 }
-
 
 @media (min-width: 768px) {
 	.hero-text {
@@ -175,7 +171,6 @@ header.hero-img {
 }
 
 @media (min-width: 992px) {
-
 	html {
 		scroll-padding-top: 112px;
 	}

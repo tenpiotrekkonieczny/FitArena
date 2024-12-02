@@ -17,6 +17,10 @@ body {
   color: #D4AF37;
 }
 
+.black-text {
+  color: #000;
+}
+
 .shadow-bg {
   background-color: rgba(0, 0, 0, 0.8);
 }
@@ -128,6 +132,7 @@ header.hero-img .fa-chevron-down {
 }
 .classes .card {
   overflow: hidden;
+  transition: 0.3s;
 }
 .classes .card:hover {
   transform: scale(1.04);
