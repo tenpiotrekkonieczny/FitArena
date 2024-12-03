@@ -19,7 +19,6 @@ body {
 	color: $main-color;
 }
 
-
 .shadow-bg {
 	background-color: rgba(0, 0, 0, 0.8);
 }
@@ -150,18 +149,14 @@ header.hero-img {
 	}
 
 	.card:hover {
-
 		transform: scale(1.04);
 	}
 }
 
 .membership {
-
-
 	h2 {
 		color: white;
-
-	} 
+	}
 
 	h3 {
 		color: $blue;
@@ -170,32 +165,63 @@ header.hero-img {
 	button {
 		color: black;
 	}
-
-
 }
 
-
-
-
-
+.prices {
+	thead th {
+		color: $main-color; /* Biały kolor tekstu */
+	}
+}
 
 @media (max-width: 376px) {
-	
-	
-
 	.classes {
 		.card-img-top {
 			height: 200px;
 			width: 350px;
 		}
 	}
-	
-	
 }
 
 
+@media (max-width: 576px) {
+	table {
+	  display: block;
+	  width: 100%;
+	  overflow-x: auto;
+	  border-collapse: collapse;
+	  
+	}
+	thead {
+	  display: none; 
+	}
+	tbody tr {
+	  display: flex;
+	  flex-direction: column;
+	  margin-bottom: 1rem;
+	  border: 1px solid #ddd;
+	  
+	}
+	tbody td {
+	  display: flex;
+	  justify-content: space-between;
+	  padding: 0.5rem;
+	  border: none;
+	  font-size: 0.9rem;
+	  text-align-last: left;
+	}
+	tbody td::before {
+	  content: attr(data-label);
+	  font-weight: bold;
+	  margin-right: 10px;
+	  
+	}
 
-
+	td {
+		text-align-last: left;
+	}
+  }
+  
+  
 
 @media (min-width: 768px) {
 	.hero-text {
@@ -206,6 +232,10 @@ header.hero-img {
 		p {
 			font-size: 22px;
 		}
+	}
+
+	.prices {
+		
 	}
 }
 
