@@ -220,6 +220,34 @@ header.hero-img {
 		text-align-last: left;
 	}
   }
+
+  .facilities {
+
+	.text-center {
+		color: $blue;
+	}
+
+	 h6 {
+		color: $main-color;
+	 }
+
+	 .map-section h6 {
+		margin-bottom: 40px; /* Odstęp między nazwą miasta a mapą */
+	  }
+
+	  .card {
+		overflow: hidden;
+	  }
+
+	  .card-img-top {
+
+		height: 400px;
+		width: 540px;
+		overflow: hidden;
+	  }
+
+
+  }
   
   
 
