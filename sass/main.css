@@ -135,6 +135,22 @@ header.hero-img .fa-chevron-down {
   transform: scale(1.04);
 }
 
+.membership {
+  position: relative;
+  background-image: url("../img/gymB.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 1;
+}
+.membership .team-shadow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -5;
+}
 .membership h2 {
   color: white;
 }
@@ -146,7 +162,40 @@ header.hero-img .fa-chevron-down {
 }
 
 .prices thead th {
-  color: #D4AF37; /* Biały kolor tekstu */
+  color: #D4AF37;
+}
+
+.facilities .text-center {
+  color: #88c0e4;
+}
+.facilities h6 {
+  color: #D4AF37;
+}
+.facilities .map-section h6 {
+  margin-bottom: 40px; /* Odstęp między nazwą miasta a mapą */
+}
+.facilities .card {
+  overflow: hidden;
+}
+.facilities .card-img-top {
+  height: 400px;
+  width: 540px;
+  overflow: hidden;
+}
+
+.trainers .card-img-top {
+  height: 300px;
+  width: auto;
+}
+.trainers i {
+  font-size: 20px;
+  padding: 10px;
+}
+.trainers .card {
+  transition: scale 0.3s;
+}
+.trainers .card:hover {
+  scale: 0.96;
 }
 
 @media (max-width: 376px) {
@@ -190,24 +239,6 @@ header.hero-img .fa-chevron-down {
          text-align-last: left;
   }
 }
-.facilities .text-center {
-  color: #88c0e4;
-}
-.facilities h6 {
-  color: #D4AF37;
-}
-.facilities .map-section h6 {
-  margin-bottom: 40px; /* Odstęp między nazwą miasta a mapą */
-}
-.facilities .card {
-  overflow: hidden;
-}
-.facilities .card-img-top {
-  height: 400px;
-  width: 540px;
-  overflow: hidden;
-}
-
 @media (min-width: 768px) {
   .hero-text h1 {
     font-size: 50px;

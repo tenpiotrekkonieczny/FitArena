@@ -154,6 +154,22 @@ header.hero-img {
 }
 
 .membership {
+	position: relative;
+	background-image: url('../img/gymB.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: 1;
+	
+ .team-shadow {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: -5;
+ }
+
 	h2 {
 		color: white;
 	}
@@ -169,9 +185,64 @@ header.hero-img {
 
 .prices {
 	thead th {
-		color: $main-color; /* Biały kolor tekstu */
+		color: $main-color;
 	}
 }
+
+.facilities {
+
+	.text-center {
+		color: $blue;
+	}
+
+	 h6 {
+		color: $main-color;
+	 }
+
+	 .map-section h6 {
+		margin-bottom: 40px; /* Odstęp między nazwą miasta a mapą */
+	  }
+
+	  .card {
+		overflow: hidden;
+	  }
+
+	  .card-img-top {
+
+		height: 400px;
+		width: 540px;
+		overflow: hidden;
+	  }
+
+
+  }
+
+  .trainers {
+
+	
+	
+	
+
+	.card-img-top {
+		height: 300px;
+		width: auto;
+	  }
+
+	  i {
+		font-size: 20px;
+		padding: 10px;
+	  }
+
+	  .card {
+		transition: scale .3s;
+	  }
+
+	  .card:hover {
+		scale: .96;
+	  }
+
+	  
+  }
 
 @media (max-width: 376px) {
 	.classes {
@@ -221,33 +292,10 @@ header.hero-img {
 	}
   }
 
-  .facilities {
+ 
 
-	.text-center {
-		color: $blue;
-	}
-
-	 h6 {
-		color: $main-color;
-	 }
-
-	 .map-section h6 {
-		margin-bottom: 40px; /* Odstęp między nazwą miasta a mapą */
-	  }
-
-	  .card {
-		overflow: hidden;
-	  }
-
-	  .card-img-top {
-
-		height: 400px;
-		width: 540px;
-		overflow: hidden;
-	  }
-
-
-  }
+	
+  
   
   
 
