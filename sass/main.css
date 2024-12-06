@@ -198,6 +198,13 @@ header.hero-img .fa-chevron-down {
   scale: 0.96;
 }
 
+.contact h4 {
+  color: #D4AF37;
+}
+.contact .text-center {
+  color: #88c0e4;
+}
+
 @media (max-width: 376px) {
   .classes .card-img-top {
     height: 200px;

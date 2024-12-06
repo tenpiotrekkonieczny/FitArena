@@ -244,6 +244,17 @@ header.hero-img {
 	  
   }
 
+
+  .contact {
+	h4 {
+		color: $main-color;
+	}
+
+	.text-center{
+		color: $blue;
+	}
+  }
+
 @media (max-width: 376px) {
 	.classes {
 		.card-img-top {
