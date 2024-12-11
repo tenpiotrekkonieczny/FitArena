@@ -199,7 +199,7 @@ header.hero-img {
 	}
 
 	.map-section h6 {
-		margin-bottom: 40px; /* Odstęp między nazwą miasta a mapą */
+		margin-bottom: 40px;
 	}
 
 	.card {
@@ -254,7 +254,7 @@ header.hero-img {
 
 .contact {
 	background: rgba(255, 255, 255, 0.2);
-backdrop-filter: blur(15px);
+	backdrop-filter: blur(15px);
 }
 
 @media (max-width: 576px) {
@@ -289,6 +289,73 @@ backdrop-filter: blur(15px);
 
 	td {
 		text-align-last: left;
+	}
+}
+
+footer {
+	background: #333;
+
+	a:hover {
+		color: $main-color;
+	}
+
+	h5 {
+		font-weight: bold;
+		margin-bottom: 15px;
+		color: $blue;
+	}
+
+	h6 {
+		color: $main-color;
+	}
+
+	p {
+		margin: 0;
+		line-height: 1.6;
+	}
+
+	.decorative-link {
+		color: #ffffff;
+		text-decoration: none;
+		font-size: 1.1rem;
+		letter-spacing: 1px;
+		display: inline-block;
+		position: relative;
+		transition: color 0.3s ease;
+	}
+
+	.decorative-link::before,
+	.decorative-link::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		height: 2px;
+		background-color: $main-color;
+		width: 0;
+		transition: width 0.4s ease;
+	}
+
+	.decorative-link::before {
+		left: 0;
+	}
+
+	.decorative-link::after {
+		right: 0;
+	}
+
+	.decorative-link:hover {
+		color: $main-color;
+	}
+
+	.decorative-link:hover::before,
+	.decorative-link:hover::after {
+		width: 50%; /* Linia z obu stron */
+	}
+}
+
+@media (max-width: 576px) {
+	footer .col-md-4 {
+		margin-bottom: 20px;
 	}
 }
 
