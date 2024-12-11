@@ -155,20 +155,20 @@ header.hero-img {
 
 .membership {
 	position: relative;
-	background-image: url('../img/gymB.jpg');
+	background-image: url("../img/gymB.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 	z-index: 1;
-	
- .team-shadow {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	background-color: rgba(0, 0, 0, 0.7);
-	z-index: -5;
- }
+
+	.team-shadow {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, 0.7);
+		z-index: -5;
+	}
 
 	h2 {
 		color: white;
@@ -190,70 +190,58 @@ header.hero-img {
 }
 
 .facilities {
-
 	.text-center {
 		color: $blue;
 	}
 
-	 h6 {
+	h6 {
 		color: $main-color;
-	 }
+	}
 
-	 .map-section h6 {
+	.map-section h6 {
 		margin-bottom: 40px; /* Odstęp między nazwą miasta a mapą */
-	  }
+	}
 
-	  .card {
+	.card {
 		overflow: hidden;
-	  }
+	}
 
-	  .card-img-top {
-
+	.card-img-top {
 		height: 400px;
 		width: 540px;
 		overflow: hidden;
-	  }
+	}
+}
 
-
-  }
-
-  .trainers {
-
-	
-	
-	
-
+.trainers {
 	.card-img-top {
 		height: 300px;
 		width: auto;
-	  }
+	}
 
-	  i {
+	i {
 		font-size: 20px;
 		padding: 10px;
-	  }
+	}
 
-	  .card {
-		transition: scale .3s;
-	  }
+	.card {
+		transition: scale 0.3s;
+	}
 
-	  .card:hover {
-		scale: .96;
-	  }
+	.card:hover {
+		scale: 0.96;
+	}
+}
 
-	  
-  }
-
-
-  .contact {
+.contact {
 	h4 {
 		color: $main-color;
 	}
 
-	.text-center{
+	.text-center {
 		color: $blue;
 	}
-  }
+}
 
 @media (max-width: 376px) {
 	.classes {
@@ -264,51 +252,45 @@ header.hero-img {
 	}
 }
 
+.contact {
+	background: rgba(255, 255, 255, 0.2);
+backdrop-filter: blur(15px);
+}
 
 @media (max-width: 576px) {
 	table {
-	  display: block;
-	  width: 100%;
-	  overflow-x: auto;
-	  border-collapse: collapse;
-	  
+		display: block;
+		width: 100%;
+		overflow-x: auto;
+		border-collapse: collapse;
 	}
 	thead {
-	  display: none; 
+		display: none;
 	}
 	tbody tr {
-	  display: flex;
-	  flex-direction: column;
-	  margin-bottom: 1rem;
-	  border: 1px solid #ddd;
-	  
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 1rem;
+		border: 1px solid #ddd;
 	}
 	tbody td {
-	  display: flex;
-	  justify-content: space-between;
-	  padding: 0.5rem;
-	  border: none;
-	  font-size: 0.9rem;
-	  text-align-last: left;
+		display: flex;
+		justify-content: space-between;
+		padding: 0.5rem;
+		border: none;
+		font-size: 0.9rem;
+		text-align-last: left;
 	}
 	tbody td::before {
-	  content: attr(data-label);
-	  font-weight: bold;
-	  margin-right: 10px;
-	  
+		content: attr(data-label);
+		font-weight: bold;
+		margin-right: 10px;
 	}
 
 	td {
 		text-align-last: left;
 	}
-  }
-
- 
-
-	
-  
-  
-  
+}
 
 @media (min-width: 768px) {
 	.hero-text {
@@ -322,7 +304,6 @@ header.hero-img {
 	}
 
 	.prices {
-		
 	}
 }
 
